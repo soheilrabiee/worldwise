@@ -35,18 +35,6 @@
         "lng": 13.376933665713324
       },
       "id": "98443197"
-    },
-    {
-      "id": "3791",
-      "cityName": "Les Valls de Valira",
-      "country": "Spain",
-      "emoji": "ES",
-      "date": "2025-09-15T21:28:33.847Z",
-      "notes": "test",
-      "position": {
-        "lat": "42.439674178149446",
-        "lng": "1.4282226562500002"
-      }
     }
   ]
 }
