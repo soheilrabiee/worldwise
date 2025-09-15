@@ -59,7 +59,7 @@ function Map() {
     );
 }
 
-// Custom components added to the leaflet return JSX
+// Custom components added to the leaflet JSX return
 function ChangeCenter({ position }) {
     const map = useMap();
     map.setView(position);
