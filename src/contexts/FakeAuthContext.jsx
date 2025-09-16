@@ -11,7 +11,7 @@ function reducer(state, action) {
     switch (action.type) {
         case "login":
             return { ...state, user: action.payload, isAuthenticated: true };
-        case " logout":
+        case "logout":
             return {
                 ...state,
                 user: null,
@@ -55,6 +55,7 @@ function useAuth() {
     const context = useContext(AuthContext);
     if (context === undefined)
         throw new Error("AuthContext was used outside of the AuthProvider!");
+    return context;
 }
 
 export { AuthProvider, useAuth };
