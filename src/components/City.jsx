@@ -21,7 +21,12 @@ function City() {
         function () {
             getCity(id);
         },
-        [id]
+
+        // If we don't make the function stable we get an infinite loop because of the fact that the function will change state value in the context and case a re-render.
+
+        // So we will make infinite number of requests to the API
+
+        [id, getCity]
     );
 
     const { cityName, emoji, date, notes } = currentCity;
